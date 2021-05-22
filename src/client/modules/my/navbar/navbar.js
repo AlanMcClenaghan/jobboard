@@ -1,5 +1,5 @@
-import { LightningElement } from 'lwc';
+import lightningElementWithBootstrap from '../../lib/lightningElementWithBootstrap';
 
-export default class Navbar extends LightningElement {
+export default class Navbar extends lightningElementWithBootstrap {
     
 }
