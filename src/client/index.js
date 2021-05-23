@@ -1,3 +1,4 @@
+
 import { createElement } from 'lwc';
 import MyApp from 'my/app';
 

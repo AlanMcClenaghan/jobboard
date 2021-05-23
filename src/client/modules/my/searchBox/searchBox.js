@@ -1,14 +1,11 @@
 import LightningElementWithBootstrap from '../../lib/lightningElementWithBootstrap'
-
 export default class SearchBox extends LightningElementWithBootstrap {
-
     searchFields={
         description:'',
         location:'',
         full_time:false
     }
-
-    changeHandler(event) {
+    changeHandler(event){
         const {name, value, checked} = event.target
         // console.log(name)
         // console.log(value)
@@ -18,6 +15,9 @@ export default class SearchBox extends LightningElementWithBootstrap {
         } else {
             this.searchFields[name] = value
         }
+
+       
+
     }
 
     searchHandler(){
