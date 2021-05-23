@@ -4,7 +4,7 @@ export default class App extends LightningElementWithBootstrap {
     description = '';
     location = '';
     full_time = false;
-    selectedJob = false;
+    selectedJob = null;
 
     jobs = [
         {
@@ -216,5 +216,14 @@ export default class App extends LightningElementWithBootstrap {
         }).catch(error=>{
             console.error(error)
         })
+    }
+
+    selectedHandler(event) {
+      this.selectedJob = event.detail;
+    }
+
+
+    goBackHandler() {
+      this.selectedJob = null;
     }
 }
